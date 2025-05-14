@@ -1,0 +1,30 @@
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 5rem;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-ht {
+    position: absolute;
+    color: rgba(209, 213, 219, 0.3);
+    font-size: 10rem;
+    font-weight: bold;
+    z-index: 0;
+    animation: floatUp 15s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-20vh) rotate(10deg);
+    }
+}
